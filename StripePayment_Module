@@ -18,6 +18,8 @@ dependencies:
     Stripe.publishableKey = stripePublishableKey;
   }
   
+  
+   // call this function on click of payment button
     Future<void> payment(Event eventId, User user, int count) async {
     try {
      
@@ -49,8 +51,8 @@ dependencies:
   }
   
   createPaymentIntentt() async {
-    
     try {
+    
       Map<String, String> headers = {
         'Content-Type': 'application/json',
         "end_client": "app"
